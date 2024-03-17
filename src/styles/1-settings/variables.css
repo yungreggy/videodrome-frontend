@@ -1,0 +1,34 @@
+:root {
+
+    /* Couleurs de fond */
+    --fond-principal: #0e1011; /* Blanc */
+    --fond-secondaire: #f8f9fa; /* Gris clair */
+    
+    /* Couleurs de texte */
+    --texte-principal: #e3e5e7; /* Gris foncé */
+    --texte-secondaire: #6c757d; /* Gris */
+
+    /* Couleurs de bordure */
+
+    /* Couleurs de barres TV */
+    --bleu: #1900ff;
+    --jaune: #ffff00;
+    --vert: #00ff00;
+    --cyan: #00ffff;
+    --rose: #ff00ff;
+    --rouge: #ff0000;
+    --blanc: #ffffff;
+    --noir: #000000;
+    --gris: #868e96;
+}
+
+
+
+
+
+
+
+
+
+
+

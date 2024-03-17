@@ -1,0 +1,101 @@
+.commentaires-container {
+  padding: 1rem;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  background-color: #898989;
+  font-family: 'Anonymous';
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+   margin-left: 61.5rem;
+  width: 740px;
+}
+
+.commentaires-container h2 {
+  margin-bottom: 1.5rem;
+  padding: 0;
+  color: #ffffff;
+}
+
+.commentaires-container ul {
+  list-style-type: none;
+  padding-top: 1rem;
+  margin: 0;
+  max-width: 100%;
+}
+
+.commentaires-container li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  max-width: 100%;
+}
+
+.commentaires-container li:last-child {
+  border-bottom: none;
+}
+
+
+.commentaires-container li strong {
+  display: block;
+  color: #b7ff00;
+  margin-bottom: 0.5rem;
+}
+
+.commentaires-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentaires-container textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 100px;
+  width: 95%;
+  margin-top: 0.5rem;
+}
+
+.commentaires-container button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #05111d;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.commentaires-container button:hover {
+  background-color: #e84104;
+}
+
+.commentaires-section {    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .commentaires-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+
+  .commentaires-container {
+    width: 95%;
+  }
+
+  .commentaires-container li {
+    -webkit-line-clamp: 2; 
+  }
+}

@@ -1,0 +1,190 @@
+/* Settings */
+@import url(./styles/1-settings/variables.css);
+
+
+
+
+@font-face {
+  font-family: "Klein";
+  src: url('./fonts/Klein-Condensed-ExtraBold-Italic-trial.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: "Klein bold";
+  src: url('./fonts/Klein-Condensed-ExtraBold-trial.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('./fonts/AnonymousPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter bold';
+  src: url('./fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Berthold';
+  src: url('./fonts/berthold-akzidenz-grotesk-be-bold-extended.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+
+
+body {
+  background-color: var(--fond-principal);
+  color: var(--texte-principal);
+}
+
+article, aside, main {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+article, aside {
+  color: white;
+}
+
+header, nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 95%;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+nav {
+  gap: 1rem; 
+}
+
+article div, header div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+article div {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+aside {
+  margin-top: 6rem;
+  width: 20%; /* Ajuster selon la mise en page et la largeur nécessaire */
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Responsive design pour nav et header */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+  }
+  header, nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+
+  }
+
+  aside {
+    width: 100%; /* Pleine largeur pour les petits écrans */
+    margin-top: 1rem;
+  }
+  header div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Typographie */
+body, article, aside, nav, header {
+  font-family: 'Roboto';
+}
+
+nav, header div {
+  font-family: 'Klein bold', 'Inter bold';
+  letter-spacing: 1pt;
+}
+
+nav {
+  font-size: 1.5rem;
+}
+
+header div {
+  font-size: smaller;
+}
+
+article div h2 {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+/* Boutons et Éléments Interactifs, liste et navigation */
+.bouton-principal {
+  background-color: var(--couleur-principale);
+  color: var(--fond-principal);
+}
+
+.interactif {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(208, 55, 0);
+  border-color: rgb(255, 255, 255);
+}
+
+nav ul li a:active {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+ul, nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,22 @@
+button {
+  padding: 0;
+  border: 0;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: '';
+}
+
+.menu-item button {
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.menu-item button:hover {
+  color: #ff5100;
+  transform: scale(1.05);
+}
+
+
+.menu-item .active button:hover {
+  color: #ff5100;
+}

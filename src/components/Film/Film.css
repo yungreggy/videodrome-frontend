@@ -1,0 +1,171 @@
+.info-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.poster-container {
+  border: 1px solid white;
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: 10%;
+  box-shadow: 0 0 35px rgba(165, 187, 264, 87.5);
+}
+
+.card {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.887);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: 10%;
+  color: black;
+}
+
+.card-header {
+  display: flex;
+  height: 5rem;
+  background-color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poster-container, .info-container {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95) rotate(-10deg);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.loaded {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotate(0deg);
+}
+
+.card-header h1 {
+  font-family: 'Roboto bold';
+  letter-spacing: 1pt;
+  font-size: 2.5rem;
+}
+
+.card-footer {
+  background-color: black;
+  height: 8rem;
+}
+
+.card-header h1, h2 {
+  padding: 1rem;
+  color: white;
+}
+
+.card-body {
+  display: flex;
+  border: 1px solid rgb(211, 60, 0);
+  height: 16rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Anonymous';
+}
+
+.votes {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-footer img {
+  position: relative;
+  top: 15%;
+  width: 100%;
+}
+
+.film-section {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.etoiles-vote {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.star {
+  cursor: pointer;
+  color: #ffc107;
+}
+
+.star:not(:last-child) {
+  margin-right: 5px;
+}
+
+.star:hover,
+.star.active {
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .film-section .info-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+  }
+  .poster-container {
+    margin: 1rem 0;
+    margin-left: 0;
+   
+  }
+
+  .info-container {
+    display: flex;
+    margin-right: 0;
+  }
+
+  .card-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-header {
+    display: flex;
+    width: 420px;
+    height: auto;
+  }
+
+  .card-header img {
+   display: none;
+  }
+  .card-body {
+    width: 355px;
+  }
+
+  .card-footer  {
+    width: 420px;
+  }
+
+ 
+  .film-section {
+    flex-direction: column;
+  }
+
+  .card-body {
+    height: auto; 
+    flex-direction: column;
+  }
+
+  .card-footer img {
+    max-height: 50px;
+  }
+
+
+}

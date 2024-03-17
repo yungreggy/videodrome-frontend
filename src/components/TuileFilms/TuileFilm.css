@@ -1,0 +1,43 @@
+.film-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.film-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.film-hover svg path {
+    transition: stroke 0.3s ease;
+}
+
+.film-hover:hover svg path {
+    stroke: #FF6347;
+}
+
+.film-hover div h2, .film-hover div h3 {
+    transition: color 0.3s ease;
+}
+
+.film-hover:hover div h2, .film-hover:hover div h3 {
+    color: #FF6347;
+}
+
+.tuileFilm {
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition-delay: 0s;
+}
+
+.tuileFilm:nth-child(odd) {
+    transition-delay: 0.1s;
+}
+
+.tuileFilm:nth-child(even) {
+    transition-delay: 0.2s;
+}
+
+.info-supplementaire {
+    font-size: small;
+    font-style: italic;
+}

@@ -1,0 +1,49 @@
+.image-1 {
+
+    position: absolute;
+    left: 33rem;
+    top: 8%;
+}
+
+
+.lignes {
+    position: absolute;
+    top: 68%;
+    right: 20%;
+}
+
+.accueil-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 45rem;
+}
+
+
+
+.paragraphes {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    width: 35%;
+    gap: 0.5rem;
+    text-align: left;
+    color: white;
+    font-family: 'Anonymous';
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #2C2F30;
+    z-index: 1;
+
+}
+
+.paragraphes p {
+    padding: 1rem;
+    ;
+    line-height: 1.5;
+    text-align: justify;
+
+
+}
